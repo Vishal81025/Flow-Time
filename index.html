@@ -352,220 +352,123 @@ textarea.fi{resize:vertical;min-height:110px;line-height:1.65}
 .mob-nav-item.active{color:var(--ac)}
 .mob-nav-item.active span:first-child{transform:scale(1.15)}
 
-/* ═══════════════════════════════════
-   TABLET  (≤900px)
-═══════════════════════════════════ */
 @media(max-width:900px){
-  /* Sidebar slide-in */
   .sidebar{transform:translateX(-100%);width:260px;z-index:300}
   .sidebar.open{transform:translateX(0);box-shadow:4px 0 24px rgba(0,0,0,.5)}
   .sovl.open{display:block}
   .hbg{display:flex}
-
-  /* Main content full-width */
   .main{margin-left:0;padding:16px;padding-top:60px}
-
-  /* Grids → single column */
   .dr,.dr.three{grid-template-columns:1fr;gap:14px}
   .frow,.frow.t3{grid-template-columns:1fr 1fr;gap:10px}
   .sgrid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}
-
-  /* Clock */
   #live-time{font-size:38px;letter-spacing:-1px}
-
-  /* Essay compare panels stacked */
   .esscmp{grid-template-columns:1fr}
-
-  /* Tracker row */
   .tkrow{flex-wrap:wrap}
   .tkrow .fg{min-width:0;flex:1 1 140px}
-
-  /* Page headers */
   .ph{flex-direction:column;align-items:flex-start;gap:10px}
   .ph > div:last-child{display:flex;flex-wrap:wrap;gap:8px;width:100%}
   .ph .badd,.ph .btn-out{flex:1;justify-content:center;min-width:100px}
-
-  /* Week tabs */
   .wtabs{gap:4px}
   .wtab{padding:5px 10px;font-size:10px}
-
-  /* DSA tabs & money tabs */
   .dtabs{gap:4px}
   .dtab{padding:5px 10px;font-size:10px}
-
-  /* Slot items */
   .sitem{flex-wrap:wrap;gap:8px}
   .sact2{width:100%;justify-content:flex-end}
-
-  /* Vocab grid */
   .vgrid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
-
-  /* Modal */
   .modal{padding:20px;max-width:100%}
-
-  /* Money cards */
   .mcard{flex-wrap:wrap}
-
-  /* Subject notes */
   .subj-chip{font-size:10px;padding:5px 11px}
   .pncard{padding:14px}
-
-  /* Auth */
   .auth-card{padding:32px 24px}
-
-  /* Charts */
   .chc{height:200px}
 }
 
-/* ═══════════════════════════════════
-   MOBILE  (≤600px)
-═══════════════════════════════════ */
 @media(max-width:600px){
-  /* Main padding */
   .main{padding:12px;padding-top:56px;padding-bottom:80px}
-
-  /* Show mobile bottom nav */
   .mob-nav{display:flex}
-
-  /* Auth screen */
   .auth-card{padding:24px 16px;border-radius:16px}
   .auth-logo-text{font-size:18px}
   #auth-screen::before,#auth-screen::after{display:none}
-
-  /* Page title */
   .pt{font-size:18px}
   .ps{font-size:11px}
-
-  /* Stats grid — 2 cols on small phones */
   .sgrid{grid-template-columns:1fr 1fr;gap:10px}
   .sc{padding:12px}
   .sv{font-size:20px}
   .si{font-size:15px;margin-bottom:5px}
-
-  /* Clock */
   #live-time{font-size:30px;letter-spacing:-1px}
   #live-date{font-size:11px}
   .clkcard{padding:18px}
-
-  /* Form rows → always 1 col on mobile */
   .frow,.frow.t3{grid-template-columns:1fr}
   .frow2{flex-direction:column;gap:8px}
   .frow2 .fi,.frow2 .fs{min-width:0;width:100%}
-
-  /* Tracker */
   .tkrow{flex-direction:column}
   .tkrow .fg{width:100%;max-width:100%!important}
   .tring{width:150px;height:150px}
   #timer-display{font-size:26px}
   .tkctrl{flex-direction:column;gap:8px;align-items:center}
   .btn-go,.btn-stp{width:100%;max-width:240px;padding:12px}
-
-  /* Schedule items */
   .schi{flex-wrap:wrap;gap:6px}
   .scht{min-width:auto;font-size:9px}
-
-  /* Slot items */
   .sitem{padding:10px 12px}
   .snm{font-size:12px}
   .scat{display:none}
   .sbar{height:28px}
   .sact2{gap:4px}
   .bsm{padding:3px 7px;font-size:9px}
-
-  /* Dashboard rows */
   .dr{gap:10px;margin-bottom:12px}
-
-  /* Week tabs scroll */
   .wtabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;gap:5px}
   .wtabs::-webkit-scrollbar{height:0}
   .wtab{flex-shrink:0;font-size:10px;padding:5px 10px}
-
-  /* DSA/Money period tabs scroll */
   .dtabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
   .dtabs::-webkit-scrollbar{height:0}
   .dtab{flex-shrink:0;font-size:10px;padding:5px 10px}
-
-  /* Essay */
   .esscmp{grid-template-columns:1fr;gap:10px}
   .essentry{padding:14px}
   .esstxt{font-size:11px}
   .esshdr{flex-direction:column;align-items:flex-start;gap:8px}
   .esshdr > div:last-child{width:100%;justify-content:flex-start}
-
-  /* Vocab */
   .vgrid{grid-template-columns:1fr}
   .vword{font-size:14px}
   .vdaylbl{font-size:11px}
-
-  /* DSA cards */
   .dcard{padding:13px}
   .dhdr{flex-direction:column;align-items:flex-start;gap:6px}
   .dtags{flex-wrap:wrap}
   .dacts{gap:5px}
   .dacts .bsm{font-size:9px;padding:3px 7px}
-
-  /* Money */
   .mcard{padding:11px 13px}
   .mamt{font-size:14px}
   .mdesc{font-size:12px}
-
-  /* Notes cards */
   .ncard{padding:13px}
   .nhdr{flex-direction:column;gap:6px}
-
-  /* Subject notes */
   .pncard{padding:13px}
   .pncard-title{font-size:13px}
   .subj-chip{font-size:9px;padding:4px 10px;gap:4px}
   #subj-strip{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}
   #subj-strip::-webkit-scrollbar{height:0}
   .pntype-badge{font-size:8px}
-
-  /* File upload dropzone */
   .dropzone{padding:20px 12px}
   .dropzone-ico{font-size:28px}
   .dropzone-txt{font-size:12px}
   .dropzone-sub{font-size:10px}
   .file-preview{flex-wrap:wrap}
-
-  /* History table */
   .htw{border-radius:var(--r)}
   .ht th,.ht td{padding:8px 10px;font-size:10px}
-
-  /* Score ring */
   .srring{width:105px;height:105px}
   .srv{font-size:22px}
-
-  /* Charts smaller */
   .chc{height:180px}
-
-  /* Modal full-screen feel */
   .movl{padding:10px}
   .modal{padding:18px 14px;border-radius:16px;max-height:95vh}
   .mtitle{font-size:15px;margin-bottom:14px}
-
-  /* Page header buttons stack */
   .ph{gap:8px}
   .ph > div:last-child{flex-wrap:wrap;gap:6px;width:100%}
   .ph .badd{flex:1 1 calc(50% - 6px);justify-content:center;font-size:11px;padding:7px 10px}
   .ph .btn-out{width:100%}
-
-  /* Slot form */
   .sform{padding:14px}
-
-  /* Add buttons row in pdfnotes */
   #page-pdfnotes .ph > div:last-child .badd{flex:1 1 calc(50% - 6px)}
-
-  /* Bottom safe area for iOS */
   .sfooter{padding-bottom:calc(12px + env(safe-area-inset-bottom,0px))}
-
-  /* Sidebar full width on small phones */
   .sidebar{width:100%}
 }
 
-/* ═══════════════════════════════════
-   VERY SMALL PHONES  (≤380px)
-═══════════════════════════════════ */
 @media(max-width:380px){
   .sgrid{grid-template-columns:1fr}
   .pt{font-size:16px}
@@ -606,12 +509,46 @@ textarea.fi{resize:vertical;min-height:110px;line-height:1.65}
       <button class="auth-tab active" onclick="swTab('login')">Login</button>
       <button class="auth-tab" onclick="swTab('signup')">Sign Up</button>
     </div>
+
+    <!-- LOGIN FORM -->
     <div id="lf">
       <div class="fg"><label class="fl">Email</label><input class="fi" type="email" id="le" placeholder="you@example.com"/></div>
       <div class="fg"><label class="fl">Password</label><input class="fi" type="password" id="lp" placeholder="••••••••"/></div>
       <div class="aerr" id="lerr">Invalid email or password.</div>
       <button class="btn-p" onclick="doLogin()">Login →</button>
+      <div style="text-align:center;margin-top:14px">
+        <button onclick="swTab('forgot')" style="background:none;border:none;color:var(--ac);font-size:12px;cursor:pointer;font-family:var(--fb);text-decoration:underline;text-underline-offset:3px;opacity:.85">🔑 Forgot password?</button>
+      </div>
     </div>
+
+    <!-- FORGOT: Step 1 — Enter Email -->
+    <div id="fpf" style="display:none">
+      <div style="margin-bottom:16px;padding:12px 14px;background:var(--acs);border-radius:var(--r);font-size:12px;color:var(--ac);line-height:1.65;border:1px solid var(--acg)">
+        🔐 Enter your registered email. If an account exists, you can set a new password instantly.
+      </div>
+      <div class="fg"><label class="fl">Your Registered Email</label><input class="fi" type="email" id="fp-email" placeholder="you@example.com"/></div>
+      <div class="aerr" id="fperr">No account found with this email.</div>
+      <button class="btn-p" onclick="doForgotStep1()">Find My Account →</button>
+      <div style="text-align:center;margin-top:12px">
+        <button onclick="swTab('login')" style="background:none;border:none;color:var(--ts);font-size:12px;cursor:pointer;font-family:var(--fb)">← Back to Login</button>
+      </div>
+    </div>
+
+    <!-- FORGOT: Step 2 — Set New Password -->
+    <div id="rpf" style="display:none">
+      <div style="margin-bottom:16px;padding:12px 14px;background:var(--oks);border-radius:var(--r);font-size:12px;color:var(--ok);line-height:1.65;border:1px solid rgba(74,222,128,.25)">
+        ✅ Account found! Set your new password below.
+      </div>
+      <div class="fg"><label class="fl">New Password</label><input class="fi" type="password" id="rp-pw" placeholder="Min. 6 characters"/></div>
+      <div class="fg"><label class="fl">Confirm New Password</label><input class="fi" type="password" id="rp-pw2" placeholder="Re-enter your new password"/></div>
+      <div class="aerr" id="rperr">Passwords do not match.</div>
+      <button class="btn-p" onclick="doResetPw()">Reset Password →</button>
+      <div style="text-align:center;margin-top:12px">
+        <button onclick="swTab('forgot')" style="background:none;border:none;color:var(--ts);font-size:12px;cursor:pointer;font-family:var(--fb)">← Back</button>
+      </div>
+    </div>
+
+    <!-- SIGNUP FORM -->
     <div id="sf" style="display:none">
       <div class="fg"><label class="fl">Full Name</label><input class="fi" type="text" id="sn" placeholder="Your Name"/></div>
       <div class="fg"><label class="fl">Email</label><input class="fi" type="email" id="se" placeholder="you@example.com"/></div>
@@ -647,7 +584,7 @@ textarea.fi{resize:vertical;min-height:110px;line-height:1.65}
       <button class="ni" onclick="go('analytics')"><span class="ico">📊</span> Analytics</button>
     </nav>
     <div class="sfooter">
-      <div class="ubadge"><div class="uav" id="nav-av">U</div><div class="uinf"><div class="unm" id="nav-nm">User</div><div class="uem" id="nav-em"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f683859384b68ed895999b">[email&#160;protected]</a></div></div></div>
+      <div class="ubadge"><div class="uav" id="nav-av">U</div><div class="uinf"><div class="unm" id="nav-nm">User</div><div class="uem" id="nav-em">user@example.com</div></div></div>
       <div class="sact">
         <button class="bicoBtn" onclick="togTheme()"><span id="thico">☀️</span> Theme</button>
         <button class="bicoBtn" onclick="doLogout()">🚪 Logout</button>
@@ -790,11 +727,7 @@ textarea.fi{resize:vertical;min-height:110px;line-height:1.65}
     <!-- MONEY TRACKER -->
     <div class="page" id="page-money">
       <div class="ph"><div><div class="pt">💰 Money Tracker</div><div class="ps">Log expenses & track your spending</div></div><button class="badd gr" onclick="openMoneyModal()">+ Add Expense</button></div>
-
-      <!-- Stats Row -->
       <div class="sgrid" id="mon-stats"></div>
-
-      <!-- Period Tabs -->
       <div class="dtabs" id="mon-tabs" style="margin-bottom:16px">
         <button class="dtab active" onclick="setMonP('today')">📅 Today</button>
         <button class="dtab" onclick="setMonP('week')">📆 This Week</button>
@@ -802,9 +735,7 @@ textarea.fi{resize:vertical;min-height:110px;line-height:1.65}
         <button class="dtab" onclick="setMonP('year')">📊 This Year</button>
         <button class="dtab" onclick="setMonP('all')">🗂 All Time</button>
       </div>
-
       <div class="dr">
-        <!-- Expense List -->
         <div>
           <div class="frow2" style="margin-bottom:14px">
             <select class="fs" id="mon-fcat" onchange="renderMoney()" style="max-width:180px">
@@ -817,14 +748,11 @@ textarea.fi{resize:vertical;min-height:110px;line-height:1.65}
           </div>
           <div id="mon-list"><div class="ntsk">No expenses yet.</div></div>
         </div>
-        <!-- Chart -->
         <div>
           <div class="card" style="margin-bottom:14px"><div class="ct">📊 Spending by Category</div><div class="chc" style="height:220px"><canvas id="mon-cat-chart"></canvas></div></div>
           <div class="card"><div class="ct">📈 Daily Spending Trend</div><div class="chc" style="height:180px"><canvas id="mon-trend-chart"></canvas></div></div>
         </div>
       </div>
-
-      <!-- Monthly Summary Table -->
       <div class="card" style="margin-top:4px">
         <div class="ct">📅 Monthly Summary</div>
         <div style="overflow-x:auto"><table class="ht" id="mon-summary-table">
@@ -833,7 +761,6 @@ textarea.fi{resize:vertical;min-height:110px;line-height:1.65}
         </table></div>
       </div>
     </div>
-
 
     <!-- SUBJECT NOTES -->
     <div class="page" id="page-pdfnotes">
@@ -854,6 +781,7 @@ textarea.fi{resize:vertical;min-height:110px;line-height:1.65}
       <div id="pdfnotes-list"><div class="ntsk"><div class="emico">📄</div><p>No notes yet</p><small>Create a subject first, then add notes!</small></div></div>
     </div>
   </div><!-- /main -->
+
   <!-- MOBILE BOTTOM NAV -->
   <nav class="mob-nav" id="mob-nav">
     <button class="mob-nav-item active" onclick="go('dashboard');mobNav(this)"><span>🏠</span><span>Home</span></button>
@@ -864,9 +792,9 @@ textarea.fi{resize:vertical;min-height:110px;line-height:1.65}
   </nav>
 </div><!-- /app -->
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* ═══════════════════════════════════
-   FLOWTIME v2.0 — COMPLETE SCRIPT
+   FLOWTIME v2.1 — WITH FORGOT PASSWORD
 ═══════════════════════════════════ */
 const DAYS=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 const DAYNAMES=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
@@ -888,12 +816,23 @@ const ld=(k,d)=>{try{const v=localStorage.getItem(gk(k));return v?JSON.parse(v):
 const gU=()=>{try{return JSON.parse(localStorage.getItem('ft_u')||'[]');}catch(e){return[];}};
 const sU=u=>localStorage.setItem('ft_u',JSON.stringify(u));
 
-/* AUTH */
+/* ── AUTH ──────────────────────────────────────────────────────── */
 function swTab(t){
-  document.querySelectorAll('.auth-tab').forEach((el,i)=>el.classList.toggle('active',(i===0&&t==='login')||(i===1&&t==='signup')));
-  document.getElementById('lf').style.display=t==='login'?'':'none';
-  document.getElementById('sf').style.display=t==='signup'?'':'none';
+  // Tab highlight — only login & signup have tab buttons
+  document.querySelectorAll('.auth-tab').forEach((el,i)=>
+    el.classList.toggle('active',(i===0&&t==='login')||(i===1&&t==='signup'))
+  );
+  // Show/hide forms
+  document.getElementById('lf').style.display   = t==='login'   ? '' : 'none';
+  document.getElementById('sf').style.display   = t==='signup'  ? '' : 'none';
+  document.getElementById('fpf').style.display  = t==='forgot'  ? '' : 'none';
+  document.getElementById('rpf').style.display  = t==='reset'   ? '' : 'none';
+  // Clear all error banners
+  ['lerr','serr','fperr','rperr'].forEach(id=>{
+    const e=document.getElementById(id);if(e)e.style.display='none';
+  });
 }
+
 function doLogin(){
   const e=document.getElementById('le').value.trim(),p=document.getElementById('lp').value;
   const u=gU().find(x=>x.email===e&&x.pw===btoa(p));
@@ -901,6 +840,7 @@ function doLogin(){
   document.getElementById('lerr').style.display='none';
   loginU(u);
 }
+
 function doSignup(){
   const n=document.getElementById('sn').value.trim(),e=document.getElementById('se').value.trim(),p=document.getElementById('sp').value;
   const err=document.getElementById('serr');
@@ -909,15 +849,47 @@ function doSignup(){
   if(users.find(x=>x.email===e)){err.textContent='Email already registered!';err.style.display='block';return;}
   const u={name:n,email:e,pw:btoa(p)};users.push(u);sU(users);
   err.style.display='none';loginU(u);toast('🎉 Welcome to FlowTime!','s');
-  // Notify owner via Formspree
   notifyFormspree('🆕 New Signup',n,e,'New user just signed up on FlowTime!');
 }
+
+/* ── FORGOT PASSWORD ─────────────────────────────────────────── */
+let _fpEmail='';
+
+function doForgotStep1(){
+  const em=document.getElementById('fp-email').value.trim();
+  const err=document.getElementById('fperr');
+  if(!em||!em.includes('@')){err.textContent='Enter a valid email address.';err.style.display='block';return;}
+  const found=gU().find(u=>u.email===em);
+  if(!found){err.textContent='No account found with this email. Check spelling or sign up.';err.style.display='block';return;}
+  err.style.display='none';
+  _fpEmail=em;
+  swTab('reset');
+}
+
+function doResetPw(){
+  const pw=document.getElementById('rp-pw').value;
+  const pw2=document.getElementById('rp-pw2').value;
+  const err=document.getElementById('rperr');
+  if(pw.length<6){err.textContent='Password must be at least 6 characters.';err.style.display='block';return;}
+  if(pw!==pw2){err.textContent='Passwords do not match. Try again.';err.style.display='block';return;}
+  err.style.display='none';
+  // Update password in stored users
+  sU(gU().map(u=>u.email===_fpEmail?{...u,pw:btoa(pw)}:u));
+  // Clear fields & state
+  _fpEmail='';
+  document.getElementById('fp-email').value='';
+  document.getElementById('rp-pw').value='';
+  document.getElementById('rp-pw2').value='';
+  swTab('login');
+  toast('🎉 Password reset! Login with your new password.','s');
+}
+/* ──────────────────────────────────────────────────────────────── */
+
 function loginU(u){
   G.user=u;localStorage.setItem('ft_sess',JSON.stringify(u));
   document.getElementById('auth-screen').style.display='none';
   document.getElementById('app').style.display='block';
   initApp();
-  // Track login visit
   notifyFormspree('🔑 User Login',u.name,u.email,'User logged in to FlowTime.');
 }
 function doLogout(){
@@ -926,6 +898,7 @@ function doLogout(){
   localStorage.removeItem('ft_sess');
   document.getElementById('app').style.display='none';
   document.getElementById('auth-screen').style.display='flex';
+  swTab('login');
   toast('👋 Logged out.','s');
 }
 function chkSess(){
@@ -936,7 +909,6 @@ function chkSess(){
       document.getElementById('auth-screen').style.display='none';
       document.getElementById('app').style.display='block';
       initApp();
-      // Track returning visitor
       notifyFormspree('👁 Returning Visit',u.name,u.email,'Returning user opened FlowTime.');
     }
   }catch(e){}
@@ -1445,15 +1417,9 @@ function setMonP(p){
 function getMoneyRange(){
   const now=new Date(),ts=now.toISOString().split('T')[0];
   if(monPeriod==='today')return d=>d===ts;
-  if(monPeriod==='week'){
-    const wd=getLast(7);return d=>wd.includes(d);
-  }
-  if(monPeriod==='month'){
-    const ym=ts.slice(0,7);return d=>d.startsWith(ym);
-  }
-  if(monPeriod==='year'){
-    const yr=ts.slice(0,4);return d=>d.startsWith(yr);
-  }
+  if(monPeriod==='week'){const wd=getLast(7);return d=>wd.includes(d);}
+  if(monPeriod==='month'){const ym=ts.slice(0,7);return d=>d.startsWith(ym);}
+  if(monPeriod==='year'){const yr=ts.slice(0,4);return d=>d.startsWith(yr);}
   return ()=>true;
 }
 
@@ -1503,24 +1469,19 @@ function renderMoney(){
   const catF=document.getElementById('mon-fcat')?.value||'';
   let money=allMoney.filter(m=>filter(m.date));
   if(catF)money=money.filter(m=>m.cat===catF);
-
-  // Stats
   const totalAll=allMoney.reduce((s,m)=>s+m.amt,0);
-  const totalPeriod=money.reduce((s,m)=>s+m.amt,0);
   const today=new Date().toISOString().split('T')[0];
   const todayAmt=allMoney.filter(m=>m.date===today).reduce((s,m)=>s+m.amt,0);
   const monthAmt=allMoney.filter(m=>m.date.startsWith(today.slice(0,7))).reduce((s,m)=>s+m.amt,0);
   const weekAmt=allMoney.filter(m=>getLast(7).includes(m.date)).reduce((s,m)=>s+m.amt,0);
   const se=document.getElementById('mon-stats');
   if(se)se.innerHTML=`
-    <div class="sc er" style="--er-bg:rgba(248,113,113,.12)"><div class="si">📅</div><div class="sv" style="color:var(--er)">₹${fmtAmt(todayAmt)}</div><div class="slab">Today's Spend</div></div>
+    <div class="sc er"><div class="si">📅</div><div class="sv" style="color:var(--er)">₹${fmtAmt(todayAmt)}</div><div class="slab">Today's Spend</div></div>
     <div class="sc or"><div class="si">📆</div><div class="sv" style="color:var(--wn)">₹${fmtAmt(weekAmt)}</div><div class="slab">This Week</div></div>
     <div class="sc pk"><div class="si">🗓</div><div class="sv" style="color:var(--pk)">₹${fmtAmt(monthAmt)}</div><div class="slab">This Month</div></div>
     <div class="sc bl"><div class="si">📊</div><div class="sv" style="color:var(--in)">₹${fmtAmt(totalAll)}</div><div class="slab">All Time</div></div>
     <div class="sc pu"><div class="si">🧾</div><div class="sv">${allMoney.length}</div><div class="slab">Transactions</div></div>
   `;
-
-  // List
   const c=document.getElementById('mon-list');
   if(c){
     if(!money.length){c.innerHTML='<div class="ntsk">No expenses for this period.</div>';}
@@ -1542,24 +1503,18 @@ function renderMoney(){
       </div>`;
     }).join('');
   }
-
-  // Category chart
   const ct={};money.forEach(m=>{ct[m.cat]=(ct[m.cat]||0)+m.amt;});
   const ck=Object.keys(ct);
   const mc2c={food:'#f59e0b',transport:'#38bdf8',education:'#6c63ff',health:'#4ade80',shopping:'#ec4899',entertainment:'#f87171',bills:'#f59e0b',other:'#555566'};
   if(G.charts.mcat)G.charts.mcat.destroy();
   const c2=document.getElementById('mon-cat-chart');
   if(c2&&ck.length)G.charts.mcat=new Chart(c2,{type:'doughnut',data:{labels:ck.map(k=>MCAT[k]?.lbl||k),datasets:[{data:ck.map(k=>ct[k]),backgroundColor:ck.map(k=>mc2c[k]||'#888'),borderWidth:2,borderColor:'var(--bgc)'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{color:'#8888aa',font:{family:'DM Sans',size:10},padding:10}},tooltip:{callbacks:{label:c=>`₹${fmtAmt(c.raw)}`}}}}});
-
-  // Trend chart — last 14 days
   const l14=getLast(14);
   const tl=l14.map(d=>new Date(d+'T00:00:00').toLocaleDateString('en-IN',{month:'short',day:'numeric'}));
   const td=l14.map(d=>allMoney.filter(m=>m.date===d).reduce((s,m)=>s+m.amt,0));
   if(G.charts.mtrend)G.charts.mtrend.destroy();
   const c3=document.getElementById('mon-trend-chart');
   if(c3)G.charts.mtrend=new Chart(c3,{type:'bar',data:{labels:tl,datasets:[{label:'₹ Spent',data:td,backgroundColor:'rgba(248,113,113,.5)',borderColor:'rgba(248,113,113,1)',borderWidth:2,borderRadius:5}]},options:cO('₹ Amount')});
-
-  // Monthly summary
   const mgroups={};
   allMoney.forEach(m=>{const ym=m.date.slice(0,7);if(!mgroups[ym])mgroups[ym]={total:0,count:0,cats:{}};mgroups[ym].total+=m.amt;mgroups[ym].count++;mgroups[ym].cats[m.cat]=(mgroups[ym].cats[m.cat]||0)+m.amt;});
   const tb=document.getElementById('mon-summary-body');
@@ -1589,7 +1544,6 @@ const PNTYPES={
 };
 const SUBJ_COLORS=['#6c63ff','#38bdf8','#4ade80','#f59e0b','#ec4899','#f87171','#a78bfa','#34d399','#fb923c','#60a5fa'];
 
-/* Subject CRUD */
 function openSubjectModal(eid=''){
   const ex=eid?ld('pn_subjects',[]).find(s=>s.id===eid):null;
   G.mSave=()=>{
@@ -1641,14 +1595,12 @@ function delSubject(id){
   popSubjFilter();renderPdfNotes();toast('🗑 Subject deleted.','w');
 }
 
-/* Note CRUD */
 function openPdfNoteModal(eid=''){
   const subjects=ld('pn_subjects',[]);
   if(!subjects.length){toast('Create a subject first!','w');openSubjectModal();return;}
   const ex=eid?ld('pn_notes',[]).find(n=>n.id===eid):null;
   const curSubjFilter=document.getElementById('pn-fsubj')?.value||'';
   G.pendingFiles=ex?.attachments?[...ex.attachments]:[];
-
   G.mSave=()=>{
     const title=document.getElementById('pn-title').value.trim();
     const sid=document.getElementById('pn-subj').value;
@@ -1711,7 +1663,6 @@ function openPdfNoteModal(eid=''){
       <div class="fg"><label class="fl">Page / Timestamp</label><input class="fi" id="pn-page" placeholder="e.g. Page 234, 14:20" value="${ex?.page||''}"/></div>
     </div>
   `,'Save Note');
-  // Render existing attachments
   setTimeout(()=>renderFileList(),100);
 }
 function delPdfNote(id){
@@ -1723,7 +1674,6 @@ function togglePnBody(id){
   if(el){el.classList.toggle('collapsed');const btn=document.getElementById('pnbtn_'+id);if(btn)btn.textContent=el.classList.contains('collapsed')?'▼ Show More':'▲ Show Less';}
 }
 
-/* Filter & Render */
 function popSubjFilter(){
   const subjects=ld('pn_subjects',[]);
   const sel=document.getElementById('pn-fsubj');
@@ -1738,8 +1688,6 @@ function renderPdfNotes(){
   const search=(document.getElementById('pn-search')?.value||'').toLowerCase();
   const fSubj=document.getElementById('pn-fsubj')?.value||'';
   const fType=document.getElementById('pn-ftype')?.value||'';
-
-  // Subject strip
   const strip=document.getElementById('subj-strip');
   if(strip){
     if(!subjects.length){strip.innerHTML='';}
@@ -1754,16 +1702,12 @@ function renderPdfNotes(){
         </div>`;
       }).join('')}`;
   }
-
-  // Filter notes
   let filtered=notes;
   if(fSubj)filtered=filtered.filter(n=>n.subjectId===fSubj);
   if(fType)filtered=filtered.filter(n=>n.type===fType);
   if(search)filtered=filtered.filter(n=>n.title.toLowerCase().includes(search)||n.content.toLowerCase().includes(search)||n.subjectName.toLowerCase().includes(search)||n.tags?.some(t=>t.toLowerCase().includes(search)));
-
   const c=document.getElementById('pdfnotes-list');
   if(!c)return;
-
   if(!subjects.length){
     c.innerHTML=`<div class="ntsk"><div class="emico">📚</div><p>No subjects yet</p><small>Click "+ New Subject" to create your first subject (e.g. Data Structures, Mathematics…)</small></div>`;
     return;
@@ -1772,14 +1716,11 @@ function renderPdfNotes(){
     c.innerHTML=`<div class="ntsk"><div class="emico">📄</div><p>No notes found</p><small>${search?'Try a different search term.':'Click "+ Add Note" to add your first note for this subject!'}</small></div>`;
     return;
   }
-
-  // Group by subject
   const groups={};
   filtered.forEach(n=>{
     if(!groups[n.subjectId])groups[n.subjectId]={name:n.subjectName,color:n.subjectColor,notes:[]};
     groups[n.subjectId].notes.push(n);
   });
-
   c.innerHTML=Object.entries(groups).map(([sid,grp])=>`
     <div style="margin-bottom:24px">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
@@ -1830,6 +1771,7 @@ function renderPdfNotes(){
     </div>
   `).join('');
 }
+
 /* FILE HANDLING */
 function getFileIco(name){
   const ext=(name.split('.').pop()||'').toLowerCase();
@@ -1847,11 +1789,7 @@ function fmtFileSize(bytes){
   return(bytes/(1024*1024)).toFixed(1)+'MB';
 }
 function isImage(name){return/\.(png|jpg|jpeg|gif|webp|svg)$/i.test(name);}
-
-function handleFileSelect(e){
-  const files=[...e.target.files];
-  processFiles(files);
-}
+function handleFileSelect(e){processFiles([...e.target.files]);}
 function dzOver(e){e.preventDefault();document.getElementById('pn-dropzone')?.classList.add('dragover');}
 function dzLeave(e){document.getElementById('pn-dropzone')?.classList.remove('dragover');}
 function dzDrop(e){
@@ -1859,7 +1797,6 @@ function dzDrop(e){
   document.getElementById('pn-dropzone')?.classList.remove('dragover');
   processFiles([...e.dataTransfer.files]);
 }
-
 function processFiles(files){
   const maxSize=5*1024*1024;
   let processed=0;
@@ -1876,12 +1813,7 @@ function processFiles(files){
     reader.readAsDataURL(file);
   });
 }
-
-function removeFile(idx){
-  if(G.pendingFiles)G.pendingFiles.splice(idx,1);
-  renderFileList();
-}
-
+function removeFile(idx){if(G.pendingFiles)G.pendingFiles.splice(idx,1);renderFileList();}
 function renderFileList(){
   const c=document.getElementById('pn-file-list');
   if(!c||!G.pendingFiles)return;
@@ -1898,7 +1830,6 @@ function renderFileList(){
     </div>`).join('');
 }
 
-/* Quick Upload-Only Modal */
 function openUploadModal(){
   const subjects=ld('pn_subjects',[]);
   if(!subjects.length){toast('Create a subject first!','w');openSubjectModal();return;}
@@ -1930,7 +1861,7 @@ function openUploadModal(){
     sv('pn_notes',notes);
     G.pendingFiles=[];
     closeModal();renderPdfNotes();
-    toast(`✅ ${G.pendingFiles?.length||notes[0]?.attachments?.length||1} file(s) uploaded!`,'s');
+    toast(`✅ File(s) uploaded!`,'s');
   };
   openM('📎 Upload Files from Device',`
     <div class="frow">
@@ -1967,7 +1898,6 @@ function filterBySubj(id){
   renderPdfNotes();
 }
 
-/* IMAGE LIGHTBOX */
 function viewImg(nid,fi){
   const notes=ld('pn_notes',[]);
   const note=notes.find(n=>n.id===nid);
@@ -1993,8 +1923,6 @@ function notifyFormspree(event,name,email,message){
     const tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'Unknown';
     const ua=navigator.userAgent;
     const device=/Mobi|Android/i.test(ua)?'Mobile':(/Tablet|iPad/i.test(ua)?'Tablet':'Desktop');
-
-    // FormData is more reliable with Formspree free tier than JSON
     const fd=new FormData();
     fd.append('_subject','FlowTime — '+event);
     fd.append('email',email||'visitor@flowtime.app');
@@ -2007,22 +1935,19 @@ function notifyFormspree(event,name,email,message){
     fd.append('Timezone',tz);
     fd.append('Device',device);
     fd.append('Browser',ua.substring(0,150));
-
-    fetch('https://formspree.io/f/xyknqbyr',{
-      method:'POST',
-      body:fd,
-      headers:{'Accept':'application/json'}
-    }).then(r=>{
-      if(!r.ok)console.warn('Formspree status:',r.status);
-    }).catch(()=>{});
+    fetch('https://formspree.io/f/xyknqbyr',{method:'POST',body:fd,headers:{'Accept':'application/json'}}).then(r=>{if(!r.ok)console.warn('Formspree status:',r.status);}).catch(()=>{});
   }catch(e){}
 }
 
 /* KEYBOARD */
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape')closeModal();
-   if(e.key==='Enter'&&document.getElementById('auth-screen').style.display!=='none'){
-    document.getElementById('lf').style.display!=='none'?doLogin():doSignup();
+  if(e.key==='Enter'&&document.getElementById('auth-screen').style.display!=='none'){
+    const lf=document.getElementById('lf'),sf=document.getElementById('sf'),fpf=document.getElementById('fpf'),rpf=document.getElementById('rpf');
+    if(lf&&lf.style.display!=='none')doLogin();
+    else if(sf&&sf.style.display!=='none')doSignup();
+    else if(fpf&&fpf.style.display!=='none')doForgotStep1();
+    else if(rpf&&rpf.style.display!=='none')doResetPw();
   }
 });
 
